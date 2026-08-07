@@ -1,63 +1,75 @@
 <!DOCTYPE html>
-<html lang = "ru">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=deviсe-width, initial-scale=1.0">
-    <title>Ветеринарная клиника</title>
-    <link rel="stylesheet" href="styledogs.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ветеринарная клиника</title>
+  <link rel="stylesheet" href="styledogs.css">
+
 </head>
 <body>
-    <div class="hero-container">
-        <header class="header">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="imgs/logo.png" alt="vetclin" class="logo-png">
-                </div>
-                <nav class="nav-links">
-                    <a href="#about">О нас</a>
-                    <a href="#services">Услуги</a>
-                    <a href="#reviews">Отзывы</a>
-                </nav>
-                <div class="nav-btn">
-                    <button class="contacts">Контакты</button>
-                    <img src="imgs/home.png" alt="homeback" class="btn-homeback">
-                </div>
+  <div class="hero-container">
+    <header class="header">
+      <div class="logo">
+        <img src="imgs/logo.png" alt="vetclin" class="logo-png">
+      </div>
+
+      <nav class="nav-links">
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+
+      <div class="nav-btn">
+        <button class="contacts">Контакты</button>
+        <img src="imgs/home.png" alt="homeback" class="btn-homeback">
+      </div>
+    </header>
+    <main class="hero-content">
+      <section class="left-col">
+        <h1 class="main-title">
+          <span class="highlight">Круглосуточная</span><br>
+          ветеринарная<br>
+          клиника
+        </h1>
+        <button class="button-primary">Записаться на прием</button>
+      </section>
+      <section class="right-col">
+        <p class="description">
+          Современная клиника с опытными специалистами, точной диагностикой и бережным отношением к каждому пациенту
+        </p>
+
+        <div class="cards-grid">
+          <div class="card">
+            <p class="card-title">Скидка 15% на первый прием</p>
+            <div class="card-image-wrap">
+              <img src="imgs/cat.png" alt="Кот">
+              <span class="price-badge">от 1000 ₽</span>
             </div>
-        </header>
-        <main class="hero-content">
-            <section class="left-col">
-                <h1 class="main-title">
-                    <span class="highlight">Круглосуточная</span><br>
-                    ветеринарная<br>
-                    клиника
-                </h1>
-                <button class="button-primary">Записаться на прием</button>
-            </section>
-            <section class="right-col">
-                <p class="description">
-                    Современная клиника с опытными спецалистами, точной диагностикой и бережным отношением к каждому пациенту
-                </p>
-                <div class="cards-grid">
-                    <div class="card">
-                        <p class="card-title">Скидка 15% на первый прием</p>
-                        <div class="cad-image-wrap">
-                                <img src="imgs/cat.png" alt="Кот">
-                                <span class="price-badge">от 1000 ₽</span>
-                            </div>
-                        </div>
-                    <div class="card">
-                        <p class="card-tittle">Круглосуточные онлайн-консультации</p>
-                        <div class="card-image-wrap">
-                            <img src="imgs/dof.png" alt="собака">
-                            <span class="price-badge">от 500 ₽</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="hero-dog-wrapper">
-                <img src="imgs/bigdog.png" alt="Большая собака" class="hero-bigdog-png">
+          </div>
+
+          <div class="card">
+            <p class="card-title">Круглосуточные онлайн-консультации</p>
+            <div class="card-image-wrap">
+              <img src="imgs/dof.png" alt="Собака">
+              <span class="price-badge">от 500 ₽</span>
             </div>
-        </main>
-    </div>
+          </div>
+        </div>
+        <div class="hero-dog-wrapper">
+          <img src="imgs/bigdog.png" alt="Большая собака" class="hero-bigdog-png">
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="containerabout">
+          <h2 class="we-create">
+            Мы создали клинику, где <span class="highlight">профессиональная медицина</span> сочетается <br>
+            с заботой о животных. Наша команда помогает питомцам <br>
+            <span class="highlight">чувствовать себя лучше</span>, а владельцам - <span class="highlight">быть уверенными</span> в <br>
+            качестве лечения
+          </h2>
+        </div>
+      </section>
+    </main>
 </body>
 </html>
