@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ветеринарная клиника</title>
   <link rel="stylesheet" href="styledogs.css">
-
 </head>
 <body>
   <div class="hero-container">
@@ -18,49 +17,55 @@
         <a href="#about">О нас</a>
         <a href="#services">Услуги</a>
         <a href="#reviews">Отзывы</a>
-      </nav>
+      </nav> 
 
       <div class="nav-btn">
         <button class="contacts">Контакты</button>
         <img src="imgs/home.png" alt="homeback" class="btn-homeback">
       </div>
     </header>
-    <main class="hero-content">
-      <section class="left-col">
-        <h1 class="main-title">
-          <span class="highlight">Круглосуточная</span><br>
-          ветеринарная<br>
-          клиника
-        </h1>
-        <button class="button-primary">Записаться на прием</button>
-      </section>
-      <section class="right-col">
-        <p class="description">
-          Современная клиника с опытными специалистами, точной диагностикой и бережным отношением к каждому пациенту
-        </p>
 
-        <div class="cards-grid">
-          <div class="card">
-            <p class="card-title">Скидка 15% на первый прием</p>
-            <div class="card-image-wrap">
-              <img src="imgs/cat.png" alt="Кот">
-              <span class="price-badge">от 1000 ₽</span>
+    <main>
+      <!-- 1. ПЕРВЫЙ ЭКРАН (HERO) -->
+      <section class="hero-content">
+        <div class="left-col">
+          <h1 class="main-title">
+            <span class="highlight">Круглосуточная</span><br>
+            ветеринарная<br>
+            клиника
+          </h1>
+          <button class="button-primary">Записаться на прием</button>
+        </div>
+
+        <div class="right-col">
+          <p class="description">
+            Современная клиника с опытными специалистами, точной диагностикой и бережным отношением к каждому пациенту
+          </p>
+
+          <div class="cards-grid">
+            <div class="card">
+              <p class="card-title">Скидка 15% на первый прием</p>
+              <div class="card-image-wrap">
+                <img src="imgs/cat.png" alt="Кот">
+                <span class="price-badge">от 1000 ₽</span>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <p class="card-title">Круглосуточные онлайн-консультации</p>
-            <div class="card-image-wrap">
-              <img src="imgs/dof.png" alt="Собака">
-              <span class="price-badge">от 500 ₽</span>
+            <div class="card">
+              <p class="card-title">Круглосуточные онлайн-консультации</p>
+              <div class="card-image-wrap">
+                <img src="imgs/dof.png" alt="Собака"> <!-- Исправлено с dof.png -->
+                <span class="price-badge">от 500 ₽</span>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="hero-dog-wrapper">
           <img src="imgs/bigdog.png" alt="Большая собака" class="hero-bigdog-png">
         </div>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about">
         <div class="containerabout">
           <h2 class="we-create">
             Мы создали клинику, где <span class="highlight">профессиональная медицина</span> сочетается <br>
@@ -69,7 +74,16 @@
             качестве лечения
           </h2>
         </div>
+        <button class="btn-more">
+          <span>Больше о нас</span>
+          <div class="arrow-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>  
+        </div>
+      </button>
       </section>
     </main>
+  </div>
 </body>
 </html>
