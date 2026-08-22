@@ -48,11 +48,13 @@ body {
 }
 
 .nav-links {
-  background: #e5e5e5;
+  background: rgba(229, 229, 229, 0.85);
   padding: 6px 12px;
   border-radius: 40px;
   display: flex;
   gap: 20px;
+  position: sticky;
+  top: 20px;
 }
 
 .nav-links a {
@@ -529,4 +531,80 @@ body {
   100% {
     transform: translateX(-50%);
   }
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay.active { display: flex; }
+
+.modal-content {
+  background: #fff;
+  border-radius: 0px;
+  max-width: 900px;
+  width: 90%;
+  padding: 40px 50px;
+  position: relative;
+  animation: slideUp 0.3s ease;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #888;
+}
+.modal-close:hover { color: #333; transform: rotate(90deg); }
+.modal-content h2 { font-size: 28px; margin-bottom: 12px; }
+.modal-content p { font-size: 15px; line-height: 1.7; color: #444; }
+.modal-content ul { list-style: none; padding: 0; margin: 16px 0; }
+.modal-content ul li { padding: 6px 0; font-size: 14px; }
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.modal-content .button-primaryyy {
+  background: #3333E5;
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modal-content .button-primaryyy:hover {
+  background: #2525bd;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(51, 51, 229, 0.3);
+}
+.modal-content::-webkit-scrollbar {
+  width: 2px;
+  background: transparent;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #3333E5;
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
 }
